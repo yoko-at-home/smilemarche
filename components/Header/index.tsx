@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './index.module.css';
 
-export default function Header() {
+export const Header = () => {
   return (
     <header className={styles.header}>
       <Link href="/">
@@ -17,4 +17,6 @@ export default function Header() {
       </Link>
     </header>
   );
-}
+};
+
+export default Header;
